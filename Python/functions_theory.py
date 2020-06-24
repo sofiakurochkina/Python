@@ -61,7 +61,7 @@ print(
 # > 5 25
 
 def mod_5(x):
-""" Return the remainder of x after dividing by 5."""
+""" Return the remainder of x after dividing by 5"""
 return x%5
 print(
     'Which number is biggest?',

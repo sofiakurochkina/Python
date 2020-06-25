@@ -31,10 +31,20 @@ def purple_shell(racers):
 
 # 4
 a = [1, 2, 3]
-b = [1, [2, 3]]
-c = []
-d = [1, 2, 3][1:]
+b = [1, [2, 3]] # The list [2, 3] counts as a single item.
+c = [] # 0 items
+d = [1, 2, 3][1:] # the same as [2,3]
 
 # Put your predictions in the list below. Lengths should contain 4 numbers, the
 # first being the length of a, the second being the length of b and so on.
 lengths = [3, 2, 0, 2]
+
+# 5
+def fashionably_late(arrivals, name):
+    """Given an ordered list of arrivals to the party and a name, return whether the guest with that
+    name was fashionably late.
+    """
+    order = arrivals.index(name)
+  # The index() method returns the position at the first occurrence of the specified value.
+    return order >= len(arrivals)/2 and order != len(arrivals)-1
+    

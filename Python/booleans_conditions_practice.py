@@ -72,7 +72,8 @@ def exactly_one_topping(ketchup, mustard, onion):
 # 7 blackjack ( aka twenty-one )
 def should_hit(player_total, dealer_total, player_aces):
     """Return True if the player should hit (request another card) given the current game
-    state, or False if the player should stay. player_aces is the number of aces the player has.
+    state,
+    or False if the player should stay. player_aces is the number of aces the player has.
     """
     if player_aces > 0:
         return True if player_total <= 17 else False

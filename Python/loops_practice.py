@@ -63,5 +63,3 @@ def slots_survival_probability(start_balance, n_spins, n_simulations):
         if spins_left == 0:
             successes += 1
     return successes / n_simulations
-
-q5.check()

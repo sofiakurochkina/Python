@@ -102,10 +102,17 @@ x[1,-1]
 
 # When does 1+1 not equal 2?
 #  tensorflow, a Python library popularly used for deep learning. It makes extensive use of operator overloading.
+
 import tensorflow as tf
 # Create two constants, each with value 1
 a = tf.constant(1)
 b = tf.constant(1)
 # Add them together to get...
 a + b
+# <tf.Tensor 'add:0' shape=() dtype=int32>
+
+#a + b isn't 2, it is (to quote tensorflow's documentation)...
+# a symbolic handle to one of the outputs of an Operation. 
+# It does not hold the values of that operation's output, but instead provides a means of computing those values in a TensorFlow tf.Session.
+
 

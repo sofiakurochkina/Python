@@ -46,8 +46,8 @@ def calculate_demographic_data(print_data=True):
     top_IN_occupation=df[(df['salary']=='>50K')&(df['native-country']=='India')]['occupation'].value_counts().keys()[0]
 
     # DO NOT MODIFY BELOW THIS LINE
-
-  if print_data:
+    
+    if print_data:
     print("Number of each race:\n", race_count)
     print("Average age of men:", average_age_men)
     print(f"Percentage with Bachelors degrees: {percentage_bachelors}%")
